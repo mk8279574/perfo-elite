@@ -1,7 +1,8 @@
+
+
 # PerfoElite — Backend API
 
-REST API for PerfoElite, a full-stack MERN e-commerce application for browsing and purchasing perfumes.
-
+REST API for PerfoElite, a full-stack MERN perfume e-commerce platform featuring authentication, product management, wishlist, cart, order processing, image uploads, and admin controls.
 ## Tech Stack
 
 - Node.js + Express
@@ -72,4 +73,18 @@ The API will be available at `http://localhost:5000`.
 
 ## Deployment
 
-Live API: _(coming soon)_
+### Live API
+
+https://perfo-elite-e5xc.onrender.com
+
+### Test Endpoint
+
+https://perfo-elite-e5xc.onrender.com/api/products
+
+The backend is deployed on Render and connected to:
+
+- MongoDB Atlas
+- Cloudinary
+- JWT Authentication (httpOnly cookies)
+
+You can verify the deployment by visiting the products endpoint, which returns live product data from the production database.
