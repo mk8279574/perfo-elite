@@ -11,6 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
+    'https://perfo-elite-eight.vercel.app',
     'https://perfo-elite-9b66lkpiy-manoj-kumar.vercel.app'
   ],
   credentials: true
