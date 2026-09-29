@@ -76,7 +76,11 @@ const loginUser = async (req, res) => {
 
 // POST /api/auth/logout
 const logoutUser = (req, res) => {
-  res.clearCookie('token');
+  res.clearCookie('token',{
+        httpOnly : true,
+        secure : process.env.NODE_ENV === 'production',
+        sameSite : process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+     });// use the same options as when the cookie was set, or production may not delete it
   res.json({ message: 'Logged out successfully' });
 };
 // GET /api/auth/me
